@@ -7,6 +7,7 @@
 
 ## Basics
 * Stocks & trading 
+  
   Stock trading is the process of the cash that is paid for the stocks is converted into a share in the ownership of a company, which can be converted back to cash by selling. To achieve a profitable return, you either go long or short in markets. When you follow a fixed plan to go long or short in markets, you have a trading strategy. Tradng strategies are usually verified by back testing.
   
 * Time series data
@@ -34,4 +35,20 @@
     import quandl
     aapl = quandl.get("WIKI/AAPL", start_dtae="2006-10-01", end_date="2012-01-01")
     ```
+  * Save data in a .csv file
+    ```
+    import pandas as pd
+    aapl.to_csv('aapl.csv')
+    df = pd.read_csv('aapl.csv', header = 0, index_col = 'Date', parse_dates=True)
+    ```
+  * Common Financial Analysis
+    * Returns
+      * Calculate daily percentage change: `pct_change()`
+        * daily percentage change r = Pn/Pre - 1
+        * e.g. df.pct_change(), `s = pd.Series([90,89,91]) s.pct_change()`
+      * Calculate monthly/quaterly returns: `resample()`
+        * 
+    * Moving windows 
+    * Volatility calculation
+    * Ordinary least square regression
     
