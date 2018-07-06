@@ -47,7 +47,43 @@
         * daily percentage change r = Pn/Pre - 1
         * e.g. df.pct_change(), `s = pd.Series([90,89,91]) s.pct_change()`
       * Calculate monthly/quaterly returns: `resample()`
-        * 
+        * ```
+          # Import `numpy` as `np`
+          import numpy as np
+
+          # Assign `Adj Close` to `daily_close`
+          daily_close = aapl[['Adj Close']]
+
+          # Daily returns
+          daily_pct_change = daily_close.pct_change()
+
+          # Replace NA values with 0
+          daily_pct_change.fillna(0, inplace=True)
+
+          # Inspect daily returns
+          print(daily_pct_change)
+
+          # Daily log returns
+          daily_log_returns = np.log(daily_close.pct_change()+1)
+           
+          # Resample `aapl` to business months, take last observation as value 
+          monthly = aapl.resample('BM').apply(lambda x: x[-1])
+
+          # Calculate the monthly percentage change
+          monthly.pct_change()
+
+          # Resample `aapl` to quarters, take the mean as value per quarter
+          quarter = aapl.resample("4M").mean()
+
+          # Calculate the quarterly percentage change
+          quarter.pct_change()
+          
+          # Daily returns
+          daily_pct_change = daily_close / daily_close.shift(1) - 1
+
+          # Print `daily_pct_change`
+          print(daily_pct_change)
+          ```
     * Moving windows 
     * Volatility calculation
     * Ordinary least square regression
