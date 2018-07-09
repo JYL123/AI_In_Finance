@@ -120,6 +120,8 @@
      * Divergence/Trend trading 
      * The belief that the movement of a quantity will continue in its current direction. In other words, we believe that stocks have momentum or upward or downward treads, that we can detect and exploit.
        * moving average crossover
+       
+          `moving average`: a widely used indicator in technical analysis that helps smooth out price action by filtering out the "noise" from random price fluctuations. It is biased on past prices. 
          
          The price of an asset moves from one side of a moving average to the other. this crossover represents a change in momentum and can be used as a point of making the decision to enter or exit the market.
        * dual moving average
@@ -132,11 +134,22 @@
    * Reversion strategy
      * Convergence/Cycle trading 
        
-       The belief that the movement of a quantity will eventually reverse.
+       The belief that the movement of a quantity will eventually reverse. 
        
        * mean revision strategy 
+       
+         We actually believe that stocks return to their mean and that you can exploit when it deviates from that mean. 
        * pairs trading mean-reversion
        
-   
-
-
+         If two stocks can be identified that have a relatively high correlation, the change in the difference in price netween the two stocks can be used to signal trading events if one of the two moves out of correlation with the other. 
+         
+       * forecating strategy
+       
+         It attempts to predict the direction or value of a stock in subsequent future time periods based on certain historical factors. 
+         
+       * high frequency trading strategy
+         
+         It exploits the sub-millisecond market microstrcuture. 
+   * A simple tradig strategy
+     * Define 2 different lookback periods: a short window and a long window, which are indicated by 2 variables, and each with an integer. We have to make sure that the integer for short window is smaller than the one for long window. 
+     *  
