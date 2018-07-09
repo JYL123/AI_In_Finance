@@ -83,8 +83,60 @@
 
           # Print `daily_pct_change`
           print(daily_pct_change)
+          
+          # Import matplotlib
+          import matplotlib.pyplot as plt
+          
+          # Plot the distribution of daily_pct_c
+          daily_pct_change.hist(bins=50)
+          
+          # Pull up summary statistics, describe() is to correctly interpret the histogram 
+          print(daily_pct_change.describe())
+          
+          # Calculate the cumulative daily returns to determine the value of an investment at regular intervals
+          cum_daily_return = (1 + daily_pct_change).cumprod()
+          
+          # Print cum_daiy_return 
+          print(cum_daily_return)
+          
+          # Plot the cumulative dailt returns
+          cum_daily_return.plot(figsize=(12, 8))
+          
+          # Show the pot
+          plt.show()
+          
+          # Resample the cumulative daily return to cumulative monthly return 
+          cum_monthly_return = cum_daily_return.
+          
+          # Print the cum_monthly_return 
+          print(cum_monthly_return)
           ```
     * Moving windows 
     * Volatility calculation
     * Ordinary least square regression
     
+## Common Trading Strategy 
+   * Momentum strategy
+     * Divergence/Trend trading 
+     * The belief that the movement of a quantity will continue in its current direction. In other words, we believe that stocks have momentum or upward or downward treads, that we can detect and exploit.
+       * moving average crossover
+         
+         The price of an asset moves from one side of a moving average to the other. this crossover represents a change in momentum and can be used as a point of making the decision to enter or exit the market.
+       * dual moving average
+       
+         When a short-term average crosses a long-term average. This signal is used to identify that momentum is shifting in the direction of the short-term average. A `buy` signal is generated when the short-term average crosses the long-term average and rises above it, while a `sell` signal is triggered by a short-term avergae crossing long-term average and falling below it.
+       * turtle trading 
+       
+         A well-known trend following strategy that was orginally taught by Richard Dennis. The basic strategy is to buy futures on a 20-day high, and sell on a 20-day low.  
+       
+   * Reversion strategy
+     * Convergence/Cycle trading 
+       
+       The belief that the movement of a quantity will eventually reverse.
+       
+       * mean revision strategy 
+       * pairs trading mean-reversion
+       
+   
+
+
