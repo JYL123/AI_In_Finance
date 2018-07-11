@@ -37,6 +37,7 @@ npm install --save react-redux
  * `App`: root component that renders everything else
  
  #### Design for container components:
- * 
+ * `VisibleTodoList`: filters the todos according to the currrent visibility filter and renders\loads a `TodoList`.
+ * `FilterLink`: gets the current visibility filter and renders a `Link`.  
  
  
