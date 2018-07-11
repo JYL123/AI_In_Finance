@@ -38,6 +38,9 @@ npm install --save react-redux
  
  #### Design for container components:
  * `VisibleTodoList`: filters the todos according to the currrent visibility filter and renders\loads a `TodoList`.
- * `FilterLink`: gets the current visibility filter and renders a `Link`.  
+ * `FilterLink`: gets the current visibility filter and renders a `Link`. 
+    * `filter`: string, visibility filter
+
+
  
  
