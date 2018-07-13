@@ -1,7 +1,7 @@
 # AI_In_Finance
 
 ## Objective
-* Build a stock price prediction algorithm in python using Keras and Tensorflow
+* Build a stock price prediction web applilcation in python using Keras, Tensorflow and React-Redux.
 
 ## Structure
 * Frontend
