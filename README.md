@@ -10,7 +10,7 @@
 
 * Machine learning
 
-  Machine learning part is to supply the stock price number needed in the frontend. 
+  Machine learning part is to supply the stock price number needed in the frontend. The algorithm will be referenced from [this website](https://github.com/llSourcell/AI_in_Finance).
 
 ## Learning resources
 * Financial side
@@ -22,7 +22,5 @@
 * Connection between react/dedux and python
   * https://www.bedjango.com/blog/how-to-build-web-app-react-redux-and-flask/
   * [Seems quite easy by following this](https://angularfirebase.com/lessons/tensorflow-js-quick-start/)
-
-
-## Sample Code
-* https://github.com/llSourcell/AI_in_Finance
+* How to build react-redux web app
+  * [Learning summary](https://github.com/JYL123/AI_In_Finance/blob/master/toyapp/README.md)
