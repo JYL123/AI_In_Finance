@@ -1,4 +1,4 @@
-## Usage with React
+## First
 
 Redux has no relation to React. We can write Redux apps with React, Angular, Ember, etc. Redux works especially well with libraries like React and Deku because they let you describe UI as a function of state, and Redux emits state updates in response to actions. 
 
@@ -6,40 +6,6 @@ Redux has no relation to React. We can write Redux apps with React, Angular, Emb
 ```
 npm install --save react-redux
 ```
-
-## Presentational and Container Components 
- 
- `Presentational components`: manages how things look
- 
- `Contaion components`: manages how to do things
- 
- [see detailed comparison here](https://redux.js.org/basics/usage-with-react#presentational-and-container-components)
- 
- ## Design Component Hierarchy
- 
- [Design the shape of the root state object](https://redux.js.org/basics/reducers)
- 
- [Think in React](https://reactjs.org/docs/thinking-in-react.html)
- 
- For `TODO` App:
- #### Design for presentational components:
- * `TodoList`: a list of todos
-    * `todos`: array of `todo` items
-       * `todo`: {id, text, completed} 
-       * `onTodoClick(id: number)`: a callback to invoke when a todo is clicked
- * `Todo`:
-    * `text`: string, the text to show on the `todo`
-    * `completed`: boolean, is whether the todo should appear crossed out
-    * `onClick()`: callback, involked when the todo is clicked
- * `Link`:
-    * `onClick()`: callabck, when a link is clicked
- * `Footer`: where user change currently visible todos
- * `App`: root component that renders everything else
- 
- #### Design for container components:
- * `VisibleTodoList`: filters the todos according to the currrent visibility filter and renders\loads a `TodoList`.
- * `FilterLink`: gets the current visibility filter and renders a `Link`. 
-    * `filter`: string, visibility filter
 
 ## Decomposition of Redux 
    
@@ -85,7 +51,11 @@ npm install --save react-redux
    4. The Redux store saves the complete state tree returned by the root reducer.
    
 ## Decomposition of React 
+
+[see detailed comparison here](https://redux.js.org/basics/usage-with-react#presentational-and-container-components)
+
    * ***Components***
+    
      * Presentational components
      
        The components that needs data to be displayed. 
@@ -109,5 +79,43 @@ const visibleTodoList = connect (
 export default visibleTodoList
 ```
 
+## Application Design with React-Redux 
+ 
+ `Presentational components`: manages how things look
+ 
+ `Contaion components`: manages how to do things
+ 
+
+ ## Design Component Hierarchy
+ 
+ [Design the shape of the root state object](https://redux.js.org/basics/reducers)
+ 
+ [Think in React](https://reactjs.org/docs/thinking-in-react.html)
+ 
+ For `TODO` App:
+ #### Design for presentational components:
+ * `TodoList`: a list of todos
+    * `todos`: array of `todo` items
+       * `todo`: {id, text, completed} 
+       * `onTodoClick(id: number)`: a callback to invoke when a todo is clicked
+ * `Todo`:
+    * `text`: string, the text to show on the `todo`
+    * `completed`: boolean, is whether the todo should appear crossed out
+    * `onClick()`: callback, involked when the todo is clicked
+ * `Link`:
+    * `onClick()`: callabck, when a link is clicked
+ * `Footer`: where user change currently visible todos
+ * `App`: root component that renders everything else
+ 
+ #### Design for container components:
+ * `VisibleTodoList`: filters the todos according to the currrent visibility filter and renders\loads a `TodoList`.
+ * `FilterLink`: gets the current visibility filter and renders a `Link`. 
+    * `filter`: string, visibility filter
+
+#### Design for other components:
+
+Sometimes it's hard to tell if some component should be a presentational component or a container. For example, sometimes form and function are really coupled together, such as in the case of this tiny component:
+
+   * AddTodo is an input field with an “Add” button
 
  
