@@ -23,7 +23,7 @@ pip install oandapyV20
 * Oanda account credential:
 ```
 Username: jyl123
-Password: 15982375031
+Password: your_password
 ```
   
   
