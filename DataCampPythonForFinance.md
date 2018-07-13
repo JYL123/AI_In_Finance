@@ -152,4 +152,4 @@
          It exploits the sub-millisecond market microstrcuture. 
    * A simple tradig strategy
      * Define 2 different lookback periods: a short window and a long window, which are indicated by 2 variables, and each with an integer. We have to make sure that the integer for short window is smaller than the one for long window. 
-     *  
+     
