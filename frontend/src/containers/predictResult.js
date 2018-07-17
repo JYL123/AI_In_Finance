@@ -1,8 +1,8 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { predictResult } from '../actions'
+import { connect } from 'react-redux';
+import { predictPrice } from '../actions/predictResult'
 
-const PredictResult = { dispatch } => {
+const PredictResult = ({ dispatch }) => {
   let inputDate
   let inputStock
   
@@ -10,18 +10,19 @@ const PredictResult = { dispatch } => {
     <div>
       <form onSubmit={e => {
         e.preventDefault()
-        if (!inputDate.value.trim() || inputStock.value.trim()) {
-          return
-        }
-        dispatch(predictResult(inputDate.value, inputStock.value))
+        // if (!inputDate.value.trim() || inputStock.value.trim()) {
+        //   return
+        // }
+        console.log("inputDate: "+ inputDate.value)
+        dispatch(predictPrice(inputDate.value, inputStock.value))
         inputDate.value = ''
         inputStock.value = ''
       }}>
       
-        <input ref={node => inputDate = node} />
-        <input ref={node => inputStock = node} />
+        Date: <input ref={node => inputDate = node} /><br></br><br></br>
+        Stock: <input ref={node => inputStock = node} /><br></br><br></br>
         
-        <button type="submit">
+        <button type="submit" >
           Predict Price
         </button>
       </form>
@@ -29,4 +30,19 @@ const PredictResult = { dispatch } => {
   )
 }
 
-export default connect()(PredictResult)
+const mapStateToProps = state => {
+  return {
+    result: state.result
+  }
+}
+
+console.log("check value: " + mapStateToProps.result)
+
+const mapDispatchToProps = (dispatch) => {
+  predictPrice
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(PredictResult)

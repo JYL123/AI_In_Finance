@@ -1,9 +1,12 @@
 const resultPredicted = (state=[], action) => {
   switch(action.type){
     case "PREDICT_PRICE": 
-      return state.result = 200
+      return {
+        result: action.stock //troubleshooting
+      }
     default:
       return state
   }
 }
-default export resultPredicted
+
+export default resultPredicted

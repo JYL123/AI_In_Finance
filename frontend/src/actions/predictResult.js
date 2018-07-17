@@ -1,4 +1,5 @@
 export const predictPrice = (date, stock) => ({
   type: "PREDICT_PRICE", 
-  date, stock
+  date: date,
+  stock: stock
 });
