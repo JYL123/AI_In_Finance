@@ -10,7 +10,9 @@ const store = createStore(pricePredictApp)
 
 //store.dispatch({type: "PREDICT_PRICE", date: "3123", stock: 123})
 
-console.log(store.getState())
+console.log("state is: " + JSON.stringify(store.getState()))
+console.log("initial state result is: " + store.getState()["resultPredicted"]["result"])
+
 render(
     <Provider store={store}>
     <App />

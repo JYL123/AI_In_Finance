@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux';
 import { predictPrice } from '../actions/predictResult'
+import { bindActionCreators } from 'redux'
+//import ResultDisplay from '../components/resultDisplay'
 
 const PredictResult = ({ dispatch }) => {
   let inputDate
@@ -13,15 +15,15 @@ const PredictResult = ({ dispatch }) => {
         // if (!inputDate.value.trim() || inputStock.value.trim()) {
         //   return
         // }
-        console.log("inputDate: "+ inputDate.value)
-        dispatch(predictPrice(inputDate.value, inputStock.value))
+        
+        predictPrice(inputDate.value, inputStock.value)
+        console.log(JSON.stringify(predictPrice(inputDate.value, inputStock.value)))
         inputDate.value = ''
         inputStock.value = ''
       }}>
       
         Date: <input ref={node => inputDate = node} /><br></br><br></br>
         Stock: <input ref={node => inputStock = node} /><br></br><br></br>
-        
         <button type="submit" >
           Predict Price
         </button>
@@ -30,19 +32,19 @@ const PredictResult = ({ dispatch }) => {
   )
 }
 
-const mapStateToProps = state => {
-  return {
-    result: state.result
-  }
-}
-
-console.log("check value: " + mapStateToProps.result)
+// const mapStateToProps = state => {
+//   return {
+//     result: state.result
+//   }
+// }
 
 const mapDispatchToProps = (dispatch) => {
-  predictPrice
+  return bindActionCreators({
+    predictPrice: predictPrice
+  }, dispatch)
 }
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(PredictResult)
