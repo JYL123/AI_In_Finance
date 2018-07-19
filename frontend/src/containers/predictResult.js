@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { connect } from 'react-redux';
 import { predictPrice } from '../actions/predictResult'
 import { bindActionCreators } from 'redux'
@@ -14,6 +14,7 @@ const PredictResult = () => {
         e.preventDefault()
         
         store.dispatch(predictPrice(inputDate.value, inputStock.value))
+        //predictPrice(inputDate.value, inputStock.value)
         console.log(JSON.stringify(predictPrice(inputDate.value, inputStock.value)))
         inputDate.value = ''
         inputStock.value = ''
@@ -37,7 +38,7 @@ const PredictResult = () => {
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
-    predictPrice: predictPrice
+    predictPrice
   }, dispatch)
 }
 

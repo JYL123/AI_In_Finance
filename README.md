@@ -13,12 +13,15 @@
   Machine learning part is to supply the stock price number needed in the frontend. The algorithm will be referenced from [this website](https://github.com/llSourcell/AI_in_Finance).
 
 ## Learning resources
-* Financial side
+* Algorithmic trading
   * https://www.oreilly.com/learning/algorithmic-trading-in-less-than-100-lines-of-python-code
   * https://www.udacity.com/course/machine-learning-for-trading--ud501
   * http://cuelogic.com/blog/python-in-finance-analytics-artificial-intelligence/
   * https://www.datacamp.com/community/tutorials/finance-python-trading
   * https://hackernoon.com/unsupervised-machine-learning-for-fun-profit-with-basket-clusters-17a1161e7aa1
+  * https://www.quantopian.com
+  * https://numer.ai/homepage
+  * https://academy.investopedia.com/products/become-a-day-trader?aca_ref=dfp-4490697266-138217071869
 * Connection between react/dedux and python
   * https://www.bedjango.com/blog/how-to-build-web-app-react-redux-and-flask/
   * [Seems quite easy by following this](https://angularfirebase.com/lessons/tensorflow-js-quick-start/)
