@@ -21,3 +21,4 @@ render(
 )
 
 
+export default store

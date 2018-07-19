@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { predictPrice } from '../actions/predictResult'
 import { bindActionCreators } from 'redux'
-//import ResultDisplay from '../components/resultDisplay'
+import store from '../index'
 
-const PredictResult = ({ dispatch }) => {
+const PredictResult = () => {
   let inputDate
   let inputStock
   
@@ -12,11 +12,8 @@ const PredictResult = ({ dispatch }) => {
     <div>
       <form onSubmit={e => {
         e.preventDefault()
-        // if (!inputDate.value.trim() || inputStock.value.trim()) {
-        //   return
-        // }
         
-        predictPrice(inputDate.value, inputStock.value)
+        store.dispatch(predictPrice(inputDate.value, inputStock.value))
         console.log(JSON.stringify(predictPrice(inputDate.value, inputStock.value)))
         inputDate.value = ''
         inputStock.value = ''
