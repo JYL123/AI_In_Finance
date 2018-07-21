@@ -11,6 +11,15 @@
 * Machine learning
 
   Machine learning part is to supply the stock price number needed in the frontend. The algorithm will be referenced from [this website](https://github.com/llSourcell/AI_in_Finance).
+  
+## Get started
+1. `cd frontend`
+
+2. `npm start`
+
+3. Enter `Date` and `Stock` to predict
+
+4. Press `Predict Price`
 
 ## Learning resources
 * Algorithmic trading
