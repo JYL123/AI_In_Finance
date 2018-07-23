@@ -67,7 +67,7 @@ npm install --save react-redux
        
 ## Connection between Redux and React 
 
-Presentational components should `connect()` with the application store to supply/retrieve information. Essentially, `connect()` connects the presentational components with `mapStateToProps` and `mapDispatchToProps`, so that all the changes sepcified in `mapStateToProps` and `mapDispatchToProps` are triggered by this component.
+Components should `connect()` with the application store to supply/retrieve information. Essentially, `connect()` connects the components with `mapStateToProps` and `mapDispatchToProps`, so that all the changes sepcified in `mapStateToProps` and `mapDispatchToProps` are triggered by this component.
 
 To extract information from the current state for the components to display, we use `mapStateToProps`. `mapStateToProps` receives application state from the store whenever state has changed and make data
 
