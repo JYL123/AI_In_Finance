@@ -22,12 +22,16 @@
 4. Press `Predict Price`
 
 ## Learning resources
-* Algorithmic trading
+* Financial side
   * https://www.oreilly.com/learning/algorithmic-trading-in-less-than-100-lines-of-python-code
   * https://www.udacity.com/course/machine-learning-for-trading--ud501
   * http://cuelogic.com/blog/python-in-finance-analytics-artificial-intelligence/
   * https://www.datacamp.com/community/tutorials/finance-python-trading
   * https://hackernoon.com/unsupervised-machine-learning-for-fun-profit-with-basket-clusters-17a1161e7aa1
+  * https://doctorj.gitlab.io/sairen/
+  * https://medium.freecodecamp.org/chart-the-stock-market-with-react-redux-react-vis-and-socket-io-18caf312693c
+  
+* Algorithmic trading
   * https://www.quantopian.com
   * https://numer.ai/homepage
   * https://academy.investopedia.com/products/become-a-day-trader?aca_ref=dfp-4490697266-138217071869
