@@ -7,7 +7,7 @@ const resultPredicted = (state={ result : 300}, action) => {
     case "PREDICT_PRICE": 
       console.log("reducer1: "+ JSON.stringify(state))
       return {
-        result: action.stock //result: getPrice(action.date, action.stock)
+        result: getPrice(action.date, action.stock)
       }
     default:
       console.log("reducer2: " + JSON.stringify(state))
@@ -18,7 +18,7 @@ const resultPredicted = (state={ result : 300}, action) => {
 
 const getPrice = (date, stock) => {
   //fake value to return to 
-  return 300
+  return 3000000
 }
 
 export default resultPredicted
