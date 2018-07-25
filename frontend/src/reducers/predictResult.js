@@ -18,6 +18,7 @@ const resultPredicted = (state={ result : 300}, action) => {
 
 const getPrice = (date, stock) => {
   //fake value to return to 
+  //this data should be gotten from the training model based on database 
   return 3000000
 }
 
