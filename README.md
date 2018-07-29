@@ -21,6 +21,12 @@
 
 4. Press `Predict Price`
 
+## Install as a module 
+
+```
+npm install ai_in_finance@1.0.0
+```
+
 ## Learning resources
 * Financial side
   * https://www.oreilly.com/learning/algorithmic-trading-in-less-than-100-lines-of-python-code
