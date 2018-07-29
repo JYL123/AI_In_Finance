@@ -1,25 +1,37 @@
 {
-    "name": "AI_IN_FINANCE",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-      "@tensorflow/tfjs": "^0.11.7",
-      "ajv": "^6.5.2",
-      "react": "^16.4.1",
-      "react-dom": "^16.4.1",
-      "react-redux": "^5.0.7",
-      "react-scripts": "1.1.4",
-      "redux": "^4.0.0",
-      "tfjs": "^0.6.0",
-      "tfjsx": "^1.0.1"
-    },
-    "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test --env=jsdom",
-      "eject": "react-scripts eject"
-    },
-    "devDependencies": {
-      "babel-preset-es2016": "^6.24.1"
-    }
-  }
+  "name": "ai_in_finance",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.11.7",
+    "ajv": "^6.5.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "tfjs": "^0.6.0",
+    "tfjsx": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-preset-es2016": "^6.24.1"
+  },
+  "description": "## Objective * Build a stock price prediction web applilcation in python using Keras, Tensorflow and React-Redux.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JYL123/AI_In_Finance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JYL123/AI_In_Finance/issues"
+  },
+  "homepage": "https://github.com/JYL123/AI_In_Finance#readme"
+}
