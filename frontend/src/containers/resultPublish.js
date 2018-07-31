@@ -4,7 +4,10 @@ import { predictPrice } from '../actions/predictResult'
 import { bindActionCreators } from 'redux'
 
 const ResultPublish = ({ result }) => (
-    <div> This is the result: { result } </div>
+    <div> 
+
+      This is the result: { result } 
+    </div>
   )
 
 const mapStateToProps = state => {

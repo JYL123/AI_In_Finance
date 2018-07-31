@@ -12,7 +12,7 @@ function* trainDataGenerator() {
 function MyTrainedModel() {
     return (
         <Train
-            trainData = {trainDataGenerator}
+            trainData = {trainDataGenerator} // data is supposed to be polled from database
             epochs={15}
             batchSize={3}
             samples={3}

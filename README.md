@@ -46,3 +46,4 @@ npm install ai_in_finance@1.0.0
   * [Seems quite easy by following this](https://angularfirebase.com/lessons/tensorflow-js-quick-start/)
 * How to build react-redux web app
   * [Learning summary](https://github.com/JYL123/AI_In_Finance/blob/master/toyapp/README.md)
+  
