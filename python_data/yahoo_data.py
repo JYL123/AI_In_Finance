@@ -26,7 +26,7 @@ db = client['stock'] # stock is the database name
 MS = 'MS' # MS is collection name 
 db_cm = db[MS]
 cdir = os.path.dirname(__file__)
-file_res = os.path.join(cdir, '/stock_ms.csv')
+file_res = os.path.join(cdir, 'stock_ms.csv')
 
 data = pd.read_csv(file_res)
 data_json = json.loads(data.to_json(orient='records'))
