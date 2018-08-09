@@ -29,14 +29,33 @@ app.get('/api/:version', function(req, res) {
 })
 
 //can be tested on postman via: application/x-www-form-urlencoded
-app.post('/api/stocks', function(req, res) {
-    var stock_name = req.body.stock;
-    var date = req.body.date
+var mongoose = require("mongoose");
+mongoose.Promise = global.Promise;
+mongoose.connect("mongodb://localhost:27017/stocks");
 
-    res.send(stock_name + ' and ' + date + ' are received from react reducer');
-});
+var stockSchema = new mongoose.Schema({
+    stock: String,
+    date: String
+  });
+
+var Stocks = mongoose.model("Stocks", stockSchema);
+
+app.post("/api/searchStock", (req, res) => {
+    console.log("function is called")
+    console.log("hello" + req)
+    var myData = new Stocks(req.body);
+    console.log("myData: " + myData)
+    myData.save()
+      .then(item => {
+        res.send("item saved to database");
+      })
+      .catch(err => {
+        res.status(400).send("unable to save to database");
+      });
+  });
 
 
 //start the server
 app.listen(port)
 console.log('Server started at http://localhost: ' + port)
+

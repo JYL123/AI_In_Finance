@@ -1,23 +1,20 @@
-//var trainedValue = require ('../../../backend/retrieveData')
-const mongoose = require('mongoose')
-
 const resultPredicted = (state={ result : 300}, action) => {
 
   console.log(state)
   console.log(JSON.stringify(action.type))
 
-  // post data to express
-  fetch('http://localhost:3001/api/stocks/', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      stock: action.stock,
-      date: action.date,
-    })
-  })
+  /* This is a post url example to post data to mongo db (post data to express) */
+  // fetch('http://localhost:3001/api/searchStock', {
+  //   method: 'POST',
+  //   headers: {
+  //     'Accept': 'application/json',
+  //     'Content-Type': 'application/json',
+  //   },
+  //   body: JSON.stringify({
+  //     stock: action.stock,
+  //     date: action.date,
+  //   })
+  // })
 
   switch(action.type){
     case "PREDICT_PRICE": 
@@ -31,12 +28,21 @@ const resultPredicted = (state={ result : 300}, action) => {
   }
 }
 
-
 const getPrice = (date, stock) => {
+  //http://localhost:3001/api/stocks?stock=AAPL&date=2016/1/1
+  //http://localhost:3001/api/stocks?stock=AAPL&date=213
+  //get data from database
+  fetch(`http://localhost:3001/api/stocks?stock=${stock}&date=${date}`)
+      .then(
+        console.log (date + ", " + stock + " are received from the user input." )
+      )
   //fake value to return to 
   //this data should be gotten from the training model based on database 
-  console.log (date + ", " + stock + " are received from the user input." )
+  //console.log (date + ", " + stock + " are received from the user input." )
   return 3000
 }
 
 export default resultPredicted
+
+
+
