@@ -8,9 +8,9 @@
 
   Frontend simple webpage is build with [React](https://reactjs.org/tutorial/tutorial.html#what-is-react)-[Redux](https://github.com/reduxjs/redux). The learning summary can be found [here](https://github.com/JYL123/AI_In_Finance/tree/master/toyapp).
   
-* Backend 
+* Server 
 
-  Backend is [Express](https://stackoverflow.com/a/12616205/9243701) web application framework with `node.js`. `Express` is used to route data from database to be displayed to react webpage.
+  Server is [Express](https://stackoverflow.com/a/12616205/9243701) web application framework with `node.js`. `Express` is used to route data from database to be displayed to react webpage.
 
 * Database
   
