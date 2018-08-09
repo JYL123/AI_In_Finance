@@ -1,16 +1,24 @@
 # AI_In_Finance
 
 ## Objective
-* Build a stock price prediction web applilcation in python using Keras, Tensorflow and React-Redux.
+* Build a stock price prediction web applilcation in python using Keras, Tensorflow, and [MERN](https://www.mongodb.com/blog/post/the-modern-application-stack-part-1-introducing-the-mean-stack) stack with Redux .
 
 ## Structure
 * Frontend
 
   Frontend simple webpage is build with [React](https://reactjs.org/tutorial/tutorial.html#what-is-react)-[Redux](https://github.com/reduxjs/redux). The learning summary can be found [here](https://github.com/JYL123/AI_In_Finance/tree/master/toyapp).
+  
+* Backend 
 
+  Backend is [Express](https://stackoverflow.com/a/12616205/9243701) web application framework with `node.js`. `Express` is used to route data from database to be displayed to react webpage.
+
+* Database
+  
+  In this project, the database is [MongoDB](https://en.wikipedia.org/wiki/MongoDB), which is an open source, and leading [NoSQL DB](https://www.mongodb.com/nosql-inline).
+  
 * Machine learning
 
-  Machine learning part is to supply the stock price number needed in the frontend. The algorithm will be referenced from [this website](https://github.com/llSourcell/AI_in_Finance).
+  Machine learning part is to supply the stock price number needed in the frontend. The algorithm will be referenced from [this website](https://lilianweng.github.io/lil-log/2017/07/08/predict-stock-prices-using-RNN-part-1.html).
   
 ## Get started
 1. `cd frontend`
@@ -29,18 +37,15 @@ npm install ai_in_finance@1.0.0
 
 ## Learning resources
 * Financial side
-  * https://www.oreilly.com/learning/algorithmic-trading-in-less-than-100-lines-of-python-code
-  * https://www.udacity.com/course/machine-learning-for-trading--ud501
-  * http://cuelogic.com/blog/python-in-finance-analytics-artificial-intelligence/
-  * https://www.datacamp.com/community/tutorials/finance-python-trading
-  * https://hackernoon.com/unsupervised-machine-learning-for-fun-profit-with-basket-clusters-17a1161e7aa1
-  * https://doctorj.gitlab.io/sairen/
-  * https://medium.freecodecamp.org/chart-the-stock-market-with-react-redux-react-vis-and-socket-io-18caf312693c
+  * http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+  * http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+  * https://lilianweng.github.io/lil-log/2017/07/08/predict-stock-prices-using-RNN-part-1.html
   
 * Algorithmic trading
   * https://www.quantopian.com
   * https://numer.ai/homepage
   * https://academy.investopedia.com/products/become-a-day-trader?aca_ref=dfp-4490697266-138217071869
+  
 * Connection between react/dedux and python
   * https://www.bedjango.com/blog/how-to-build-web-app-react-redux-and-flask/
   * [Seems quite easy by following this](https://angularfirebase.com/lessons/tensorflow-js-quick-start/)
