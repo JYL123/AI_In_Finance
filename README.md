@@ -12,22 +12,28 @@
 
   Server is [Express](https://stackoverflow.com/a/12616205/9243701) web application framework with `node.js`. `Express` is used to route data from database to be displayed to react webpage.
 
-* Database
+* Database (via terminal)
   
-  In this project, the database is [MongoDB](https://en.wikipedia.org/wiki/MongoDB), which is an open source, and leading [NoSQL DB](https://www.mongodb.com/nosql-inline).
+  In this project, the database is [MongoDB](https://en.wikipedia.org/wiki/MongoDB), which is an open source, and leading [NoSQL DB](https://www.mongodb.com/nosql-inline). In this project, we statically save trained data (stock and its price) into the database, and user can retrieve the price from the interface with `get` url.   
   
-* Machine learning
+* Machine learning/Python_data
 
-  Machine learning part is to supply the stock price number needed in the frontend. The algorithm will be referenced from [this website](https://lilianweng.github.io/lil-log/2017/07/08/predict-stock-prices-using-RNN-part-1.html).
+  Machine learning part is to supply the stock price number needed in the frontend. The algorithm will be referenced from [this website](https://lilianweng.github.io/lil-log/2017/07/08/predict-stock-prices-using-RNN-part-1.html). In this reference post, the neura network used is [RNN](https://en.wikipedia.org/wiki/Recurrent_neural_network). This is because `RNN` is preferred for sequencial data, and stock prices are a series of time sequential data. 
+  
+  `Please note that the data is not trained in this project. However it can be done by following the above blog and modify according in python_data folder in this project.`
   
 ## Get started
 1. `cd frontend`
 
-2. `npm start`
+2. `npm start` 
 
 3. Enter `Date` and `Stock` to predict
 
 4. Press `Predict Price`
+
+## Access database
+
+Please refer to [this page](https://github.com/JYL123/AI_In_Finance/tree/master/server) -> `With MongoDB (on terminal)`
 
 ## Install as a module 
 
