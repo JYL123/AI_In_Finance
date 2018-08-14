@@ -8,18 +8,11 @@ Learn to build an [RNN](http://colah.github.io/posts/2015-08-Understanding-LSTMs
 
 `RNN` is used to train data when previous information should be considered to predict the current value. This is due to its repetitve neural network where the each neural network calculate an output and feed this output to the input of the next neural network. These repetitive neural networks are called `self-loop`. Therefore, [`RNN` is good for sequential data](http://karpathy.github.io/2015/05/21/rnn-effectiveness/), however, `RNN` is less effective when the previous information it has to refer to to predict the current data is far away. `LSTM` is designed to alleviate this problem to help `RMN` to better memorize the long-term contex.
 
-## Stock price in neural network
+## Learning resources
 
-### Characteristics of stock prices
+1. [Predict Stock Prices Using RNN: Part 1](https://lilianweng.github.io/lil-log/2017/07/08/predict-stock-prices-using-RNN-part-1.html)
 
-The stock prices is a time series of length N. Each series is the close price on that day. 
+2. [Predict Stock Prices Using RNN: Part 2](https://lilianweng.github.io/lil-log/2017/07/22/predict-stock-prices-using-RNN-part-2.html)
 
-### Fit stock price to RNN
 
-## Data preparation
-
-90% of Training data
-Latest 10% of Testing data
-
-## Code
 
