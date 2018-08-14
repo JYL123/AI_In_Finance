@@ -20,7 +20,7 @@
 
   Machine learning part is to supply the stock price number needed in the frontend. The algorithm will be referenced from [this website](https://lilianweng.github.io/lil-log/2017/07/08/predict-stock-prices-using-RNN-part-1.html). In this reference post, the neura network used is [RNN](https://en.wikipedia.org/wiki/Recurrent_neural_network). This is because `RNN` is preferred for sequencial data, and stock prices are a series of time sequential data. 
   
-  `Please note that the data is not trained in this project. However it can be done by following the above blog and modify according in python_data folder in this project.`
+  `Please note that the data is not trained in this project. However it can be done by following the above blog and modify accordingly in python_data folder in this project.`
   
 ## Get started
 1. `cd frontend`
