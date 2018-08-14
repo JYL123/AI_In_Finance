@@ -32,7 +32,7 @@
 ## Install as a module 
 
 ```
-npm install ai_in_finance@1.0.0
+npm install ai_in_finance@1.0.1
 ```
 
 ## Learning resources
