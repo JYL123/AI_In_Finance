@@ -40,7 +40,7 @@ Please refer to [this page](https://github.com/JYL123/AI_In_Finance/tree/master/
 ## Install as a module 
 
 ```
-npm install ai_in_finance@1.0.2
+npm install ai_in_finance@1.0.3
 ```
 
 ## Learning resources
