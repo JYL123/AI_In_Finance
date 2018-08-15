@@ -1,7 +1,7 @@
 # AI_In_Finance
 
 ## Objective
-* Build a stock price prediction web applilcation in python using Keras, Tensorflow, and [MERN](https://www.mongodb.com/blog/post/the-modern-application-stack-part-1-introducing-the-mean-stack) stack with Redux .
+* Build a stock price prediction web applilcation in python using Keras, Tensorflow, and [MERN](https://www.mongodb.com/blog/post/the-modern-application-stack-part-1-introducing-the-mean-stack) stack with [Redux](https://github.com/reduxjs/redux). This module is designed to be a simple component and therefore can be served as a wrapper to plug into your own project.
 
 ## Structure
 * Frontend
@@ -38,7 +38,7 @@ Please refer to [this page](https://github.com/JYL123/AI_In_Finance/tree/master/
 ## Install as a module 
 
 ```
-npm install ai_in_finance@1.0.1
+npm install ai_in_finance@1.0.2
 ```
 
 ## Learning resources
