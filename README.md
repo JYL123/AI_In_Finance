@@ -25,13 +25,15 @@
   `Please note that the data is not trained in this project. However it can be done by following the above blog and modify accordingly in python_data folder in this project.`
   
 ## Get started
-1. `cd frontend`
+1. Install all modules needed: `npm install package.json`
 
-2. `npm start` 
+2. `cd frontend`
 
-3. Enter `Date` and `Stock` to predict
+3. `npm start` 
 
-4. Press `Predict Price`
+4. Enter `Date` and `Stock` to predict
+
+5. Press `Predict Price`
 
 ## Access database
 
