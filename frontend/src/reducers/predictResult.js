@@ -1,4 +1,4 @@
-const resultPredicted = (state={ result : 300}, action) => {
+const resultPredicted = (state={ result : 0}, action) => {
 
   console.log(state)
   console.log(JSON.stringify(action.type))
@@ -39,7 +39,7 @@ const getPrice = (date, stock) => {
   //fake value to return to 
   //this data should be gotten from the training model based on database 
   //console.log (date + ", " + stock + " are received from the user input." )
-  return 3000
+  return 208.77
 }
 
 export default resultPredicted

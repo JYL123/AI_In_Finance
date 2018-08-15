@@ -2,12 +2,17 @@ import React from 'react'
 import { connect } from 'react-redux';
 import { predictPrice } from '../actions/predictResult'
 import { bindActionCreators } from 'redux'
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
 
 const ResultPublish = ({ result }) => (
-    <div> 
-
+  <div>
+  <CardContent>
+    <Typography component="p">
       This is the result: { result } 
-    </div>
+    </Typography >
+  </CardContent>
+  </div>
   )
 
 const mapStateToProps = state => {

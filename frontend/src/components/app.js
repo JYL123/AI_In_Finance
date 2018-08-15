@@ -1,12 +1,14 @@
 import React from 'react'
 import PredictResult from '../containers/predictResult'
 import ResultPublish from '../containers/resultPublish'
-import { Train, Model, Dense } from 'tfjsx'
+import Card from '@material-ui/core/Button';
 
 const App = () => (
     <div>
-        <PredictResult />
-        <ResultPublish />
+        <Card>
+            <PredictResult />
+            <ResultPublish />
+        </Card>
     </div>
 )
 

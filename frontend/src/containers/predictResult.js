@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { predictPrice } from '../actions/predictResult'
 import { bindActionCreators } from 'redux'
 import store from '../index'
+import Button from '@material-ui/core/Button';
 
 const PredictResult = () => {
   let inputDate
@@ -22,9 +23,9 @@ const PredictResult = () => {
       
         Date: <input ref={node => inputDate = node} /><br></br><br></br>
         Stock: <input ref={node => inputStock = node} /><br></br><br></br>
-        <button type="submit" >
+        <Button type="submit" size="small" color="primary">
           Predict Price
-        </button>
+        </Button>
       </form>
     </div>
   )
